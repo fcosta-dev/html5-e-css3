@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+
+	<head>
+		<title>Título do meu website</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+
+		<form>
+			<fieldset> <!--Significa criar um grupo no formularios-->
+				<legend>Meu grupo do formulário</legend>
+				<div><input type="text" name="nome" placeholder="Digite o seu nome" /></div> <!-- Placeholder significa escrita dentro do do campo -->
+				<div><input type="text" name="email" placeholder="Digite o seu e-mail" /></div>
+				<div>
+					<select name="lista"> <!-- Select é igual ao Optionbox do VB-->
+						<option disabled selected>Qual sua idade?</option> <!-- Disable porque deve ficar desabilitada para edição, podendo apenas gerar escolha -->
+						<option value="20">20</option>
+						<option value="25+">25+</option>
+						<option value="40+">40+</option>
+					</select>
+				</div>
+
+				<h2>Qual sua cidade?</h2>
+				<div class="input">
+				<div> <!-- o name "cidade" foi colocado para todos para que não seja permitido multiplas seleções no type radio-->
+					<input type="radio" name="cidade" value="Florianópolis" /><span>Florianópolis</span>
+				</div>
+				<div>
+					<input type="radio" name="cidade" value="São Paulo" /><span>São Paulo</span>
+				</div>
+
+				<div>
+					<input type="radio" name="cidade" value="Rio de Janeiro" /><span>Rio de Janeiro</span>
+				</div>
+
+				</div>
+
+				<h2>O que você gosta de comer?</h2>
+				<div class="input">
+				<div>
+					<input type="checkbox" name="cidade[]" value="Fruta" /><span>Fruta</span>
+				</div>
+				<div>
+					<input type="checkbox" name="cidade[]" value="Fast Food" /><span>Fast Food</span>
+				</div>
+
+				<div>
+					<input type="checkbox" name="cidade[]" value="Salada" /><span>Salada</span>
+				</div>
+
+				</div>
+
+					<div> <!-- Necessário criar uma DIV cega para criar estas áreas -->
+						<textarea name="observacao" placeholder="Possui alguma observação?"></textarea>
+					</div>
+
+					<div>
+						<input type="submit" name="acao" value="Enviar!">
+					</div>
+			</fieldset>
+		</form>
+		
+	</body>
+
+
+
+
+</html>

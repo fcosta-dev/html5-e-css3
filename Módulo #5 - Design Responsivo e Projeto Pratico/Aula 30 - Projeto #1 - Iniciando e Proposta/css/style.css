@@ -1,0 +1,44 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+	height: 100%;
+}
+
+.center{ /* Classe chamada de Center */
+	width: 1280px;
+	margin: 0 auto;
+}
+
+.header{
+	width: 100%;
+	height: 60px;
+	background-color: #212343;
+}
+
+.header img{ /* Chamando a imagem dentro do header */
+	margin: 15px; /* Aplicando margem para a logomarca - posicionando a mesma dentro do header criado */
+}
+
+.container-banner{ /* Chamando a classe container-banner */
+	width: 100%;
+	height: 557px;
+	background-image:url('../images/header_bg.png'); /* O background da pagina vai ser uma imagem */
+	background-size: cover; /* Quer que o background cubra toda a área */
+	background-position: center; /* Quer que a posição do background seja no centro */
+}
+
+.container-banner > .center{ /* Classe center dentro da classe container-banner */
+	height: 100%;
+	/*text-align: right;*/
+}
+
+.form{
+	width: 400px;
+	height: 100%;
+	float: right; /* A abertura de tela do formulário será para direita */
+	background-color: white;
+}

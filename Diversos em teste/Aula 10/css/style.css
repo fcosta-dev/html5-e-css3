@@ -1,0 +1,15 @@
+/* Chamando uma ID 
+#div1 h1{
+	color: red;
+}
+*/
+
+/* Chamando uma Classe */
+.div1 h1{
+	color: red;
+}
+
+.div2 h1{
+	color: orange;
+}
+

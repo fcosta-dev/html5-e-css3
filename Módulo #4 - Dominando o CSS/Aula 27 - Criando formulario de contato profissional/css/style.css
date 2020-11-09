@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+html,body{
+    height:100%;
+}
+
+
+form{
+	width: 96%;
+	max-width: 600px;
+	margin:30px auto; 
+	text-align: left;
+}
+
+form fieldset{
+	padding: 20px 40px; /* Espaçamento antes do texto do título do form */ 
+	border:1px solid #ccc; /* Borda (Dotted é pontilhado / Solid é fixa / Dashed é pontilhado maior)*/
+}
+
+form legend{
+	text-align: left;
+	font-size: 17px; /* Tamanho da letra */
+	color:rgb(130,130,130);
+}
+
+
+form input[type=text]{ /* Chamando apenas o form que tem o atributo de 'text' */
+	font-family: tahoma;
+	display: inline-block;
+	margin-top:30px; /* Quero que tenha uma margin top de 30 pixels */
+	width: 80%; /* Tamanho do campo de texto de 80% dos 96% colocado no form */
+	padding: 10px 13px; /* Espaçamento do  texto */
+	border:1px solid #ccc;
+}
+
+
+form input[type=text]:focus, form select:focus, form textarea:focus{ /*Quando receber o foco ... */
+	outline: 0; /*...no texto não terá borda outline destacada */
+	background-color: gray; /*...fundo do campo de texto será de cor cinza */
+}
+
+
+form select{ /* Estilizando o Select */
+	font-family: tahoma;
+	color:rgb(100,100,100);
+	width:calc(80% + 26px); /*calc serve para criar expressões dentro e ser ve para colocar calculos */
+	margin-top:30px;
+	padding: 10px 13px; /* Com esse padding ficará igual aos campos de texto ou mesmas dimensões */
+	display: inline-block;
+	border:1px solid #ccc;
+}
+
+/*
+form select option[disabled]{
+	color:orange;
+}
+*/
+
+/* Este comando abaixo significa que a 3a linha do select option é de cor vermelha
+form select option:nth-of-type(3){
+	color:red;
+}
+*/
+
+
+form h2{
+	margin-top:20px;
+	color: rgb(100,100,100);
+}
+
+.input{
+	display: inline-block;
+	text-align: left;
+	margin-top:20px;
+}
+
+.input span{
+	margin-left: 13px;
+	font-size: 16px;
+	color: rgb(130,130,130);
+}
+
+form textarea{
+	font-family: tahoma;
+	border: 1px solid #ccc;
+	margin-top:30px;
+	width: 80%;
+	height: 140px;
+	padding: 10px 13px;
+	resize: none; /* Desabilita a opção de movimentar tamanho do textarea no formulário */
+}
+
+form input[type=submit]{
+	margin-top:30px;
+	border:0;
+	width: 140px;
+	height: 40px;
+	font-size: 16px;
+	cursor: pointer; /* Muda o ícone do cursor quando passa em cima do botão */
+	border:2px solid rgb(130,130,130);
+	color:white;
+	background-color: rgb(140,140,140);
+}

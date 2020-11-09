@@ -1,0 +1,73 @@
+*{
+ margin:0;
+ padding:0;
+}
+
+
+html,body{
+  height:100%;
+}
+
+/*
+input[type=file]{
+	display: none;
+}
+*/
+
+label2{
+	display:block;
+	margin:20px auto;
+	cursor: pointer;
+	font-size: 17px;
+	width: 220px;
+	height: 40px;
+	background-color:#ccc;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+}
+
+
+
+form{
+	text-align: center;
+	background-color: #ccc;
+	padding: 30px 0;
+}
+/*
+
+form select{
+	width: 220px;
+	height: 30px;
+	border:0;
+	padding-left:10px;
+	background-image:url('../imagens/sprite.png');
+	background-size:10px 20px;
+	background-repeat: no-repeat;
+	background-position: 96% 8px;
+	appearance:none; Serve para tirar a aparencia comum/padrão do item naquele navegador
+	-webkit-appearance:none; Webkit é para o chrome e safari
+	-moz-appearance:none; Moz é para o mozilla
+}
+
+select::-ms-expand{
+	display: none; Propriedade para o internet explorer o "appearance" tem que ser uma classe nova
+}
+*/
+
+input[type=checkbox]{
+	display: none;
+}
+
+label{
+	display: inline-block;
+	width: 30px;
+	height:30px;
+	background-color:green;
+}
+
+/*Essa propriedade abaixo indica que quando o elemento for selecionado ele vai ser executado estes comandos abaixo */
+input[type=checkbox]:checked + label{ 
+	/*Elemento "+" significa que está chamando o elemento abaixo/proximo deste */
+	background-color:red;
+} 

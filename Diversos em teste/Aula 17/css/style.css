@@ -1,0 +1,39 @@
+*{ /*Sinal de multiplicação significa que está sendo pego todos os elementos existentes no nosso documento*/
+margin: 0; /*Espaçamento*/
+padding: 0; /*Espaçamento*/
+}
+
+/*
+ Estilo para o conteudo do nosso site
+*/
+
+html,body {
+	height: 100%;
+
+}
+
+.center{
+	box-sizing: content-box;
+	border-style: solid;
+	 /*box-sizing: border-box;*/
+	 width: 1280px;
+	 margin:  0 auto;
+	 padding-left: 30px;
+	 padding-right: 30px;
+	 padding-top: 30px;
+	 padding-bottom: 30px;
+	 background-color: gray;
+}
+
+.artigo{
+	/*margin-left: : 50px;
+	margin-right: 50px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	Comandos acima, simplificados abaixo*/
+	/*margin: 50px 50px 20px 50px;/*acima, direita, baixo, esquerda*/
+	border-style: solid;
+
+	/*padding = espaçamento*/
+
+}

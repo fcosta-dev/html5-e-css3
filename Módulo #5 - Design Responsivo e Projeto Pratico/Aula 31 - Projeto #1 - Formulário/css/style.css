@@ -1,0 +1,109 @@
+*{ /* toda a pagina irá conter estas propriedades padrões */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans" /* Dentro que todo o meu documento utilize essa fonte */
+}
+
+html,body{
+	height: 100%;
+}
+
+@font-face{ /* Especifica uma fonte customizada com a qual exibe o texto; a fonte pode ser carregada 
+	de um servidor remoto ou de uma fonte instalada localmente no computador do usuário */
+	src:url('../fonts/OpenSans-Light.ttf');
+	font-family: "Open Sans";
+}
+
+.center{
+	width: 1280px;
+	margin: 0 auto;
+}
+
+.header{
+	width: 100%;
+	height: 60px;
+	background-color: #212343;
+}
+
+.header img{
+	margin: 15px;
+}
+
+.container-banner{
+	width: 100%;
+	height: 557px;
+	background-image:url('../images/header_bg.png');
+	background-size: cover;
+	background-position: center;
+}
+
+.container-banner > .center{
+	height: 100%;
+	/*text-align: right;*/
+}
+
+.form{
+	padding:10px;
+	width: 400px;
+	height: calc(100% + 30px); /* O calc é usado para calcular porcentagens com pixels */
+	float: right;
+	position: relative; /* para permitir utilizar as propriedados botton, left etc */
+	top:-15px; /* Para que o topo do formulario pegue um pedaço do header */
+	border:8px solid #ccc; /* Borda do formulário */
+	background-color: white;
+}
+
+.form h2{ /* Propriedades do h2 dentro do form criado (formulário) */
+	font-weight: normal;
+	color: #999999;
+	font-size: 21px;
+}
+
+.input-container{
+	margin-top:20px;
+}
+
+.input-container span{
+	display: inline-block;
+	width: 100%;
+	color: #BBBBBB;
+	font-size: 17px;
+}
+
+.form p{
+	display: inline-block;
+	width: 100%;
+	color: #BBBBBB;
+	font-size: 17px;
+	margin:20px 0;
+}
+
+.input-container input[type=text]{ /* Propriedades do campo texto */
+	margin-top:8px; /* Aumentando margem entre o span e o input */
+	width: 344px;
+	height: 55px;
+	border:1px solid #ccc;
+}
+
+.form .input-submit-container{
+	text-align: center;
+}
+
+.form input[type=submit]{
+	color: white;
+	font-size: 25px;
+	width: 280px;
+	height: 56px;
+	display: inline-block;
+	background-color: #363A6D;
+	border-top:0; /* tirar a borda de cima */
+	border-right: 0; /* tirar a borda da direita */
+	border-left: 0; /* tirar a borda da esquerda */
+	cursor: pointer; /* mudança do cursor do mouse */
+	border-bottom: 5px solid #4A5097;
+}
+
+.form input[type=submit]:hover{ /* Efeito de transição ao passar o mouse */
+	background-color: #323665;
+}

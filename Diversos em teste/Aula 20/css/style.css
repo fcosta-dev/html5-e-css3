@@ -1,0 +1,31 @@
+*{ /*Sinal de multiplicação significa que está sendo pego todos os elementos existentes no nosso documento*/
+margin: 0; /*Espaçamento*/
+padding: 0; /*Espaçamento*/
+}
+
+/*
+ Estilo para o conteudo do nosso site
+*/
+
+html,body {
+	height: 100%;
+
+}
+
+
+.box,.box2{
+	width: 300px;
+	margin: 0 auto;
+	background: gray;
+
+}
+
+.box p,.box p{
+	width: 100%;
+}
+
+.box2{
+	background-color: red;
+	margin-top: 20px; 
+	display: block;
+}

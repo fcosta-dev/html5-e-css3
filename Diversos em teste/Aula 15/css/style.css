@@ -1,0 +1,25 @@
+*{ /*Sinal de multiplicação significa que está sendo pego todos os elementos existentes no nosso documento*/
+margin: 0; /*Espaçamento*/
+padding: 0; /*Espaçamento*/
+}
+
+/*
+ Estilo para o conteudo do nosso site
+*/
+
+html,body {
+	height: 100%;
+
+}
+
+.tipo1{
+	color: rgb(100,100,100);
+}
+
+.link_{
+	font-size: 30px;
+}
+
+.tipo2{
+	font-size: 40px;
+}

@@ -1,0 +1,48 @@
+*{ /*Sinal de multiplicação significa que está sendo pego todos os elementos existentes no nosso documento*/
+margin: 0; /*Espaçamento*/
+padding: 0; /*Espaçamento*/
+}
+
+/*
+ Estilo para o conteudo do nosso site
+*/
+
+html,body {
+	height: 100%;
+
+}
+
+
+
+p{
+	display: inline-block;
+	width: 30px;
+	margin-right: -4px; 
+	height: 300px;
+	background: red;
+}
+
+/*
+.center{
+	box-sizing: content-box;
+	width: 1280px;
+	border-style: solid;
+	/*box-sizing: border-box;
+	margin:  0 auto;
+	background-color: gray;
+}
+
+.artigo{
+	/*border: 3px solid rgba(255,255,255,0); /*rgba é transparência - com isso será colocado espaçamento somente colocando a borda
+	box-sizing: border-box;
+	border-left-style: dotted;
+	border-width: 3px;
+	border-color: rgb(255,0,0);
+	vertical-align: top; /*É alinhamento na vertical
+	display: inline-block;
+	margin-right: -4px;
+	margin-top: 30px;
+	width: 640px; /*Quero que cada artigo tenha 640 pixels
+	outline: 8px solid blue; /*Borda expandida, porém para fora
+}
+*/

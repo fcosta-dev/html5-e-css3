@@ -1,0 +1,40 @@
+*{ /*Sinal de multiplicação significa que está sendo pego todos os elementos existentes no nosso documento*/
+margin: 0; /*Espaçamento*/
+padding: 0; /*Espaçamento*/
+}
+
+/*
+ Estilo para o conteudo do nosso site
+*/
+
+.artigo{
+	width: 1280px;
+	background-color: rgb(200,200,200);
+	padding: 40px; 
+	margin: 40px auto;
+	text-align: center;
+
+}
+
+.artigo h1{
+	/* color: #069; */
+	color:rgb(66, 149, 244);
+	font-size: 23px;
+	font-family: "Times New Roman", Times, serif; /*O navegador tentará usar estas 3 fontes por sequencia, se nao achar uma, usa a outra */
+	font-style: normal;
+	font-weight: bold;
+	/* font-variant: small-caps;*/
+
+}
+
+.artigo p{
+	color: #b4b4b4;
+	text-align: left; /* Alinhamento do texto do paragrafo p */
+	font-size: 17px;
+	font-family: 'tahoma'
+	font-style: normal;
+	font-weight: bold;
+	line-height: 40px; /* Muda a altura de cada espaço de quebra de linha - espaçamento de cada linha*/
+	margin-top: 12px;
+
+}

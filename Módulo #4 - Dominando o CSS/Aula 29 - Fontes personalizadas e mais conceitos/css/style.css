@@ -1,0 +1,37 @@
+*{ /* Este "*" está pegando todos os elementos da pagina   */
+ margin:0;
+ padding:0;
+}
+
+@font-face{ /* Chamando a fonte internamente, pelo diretório */
+	font-family: "Open Sans"; /* Dando nome para a própria fonte */
+	src:url('../fonts/OpenSans-Light.ttf'); /* Endereço onde a fonte está salva */
+}
+
+html,body{
+  height:100%;
+  font-family: "Open Sans";
+}
+
+/*
+ Tudo dentro do formulário. Inluindo filhos > filhos
+*/
+
+form *{ /* Este "form *" significa que está pegando todos os elementos do formulário e aplicando as propriedades abaixo */ 
+	font-family: "Open Sans";
+}
+
+
+
+/*
+Quando utilizamos o important o nível de especificação deixa de existir.
+Quando mais de 1 estão utilizando o important então o nível de especificação volta a contar.
+
+.box p{
+	font-family: "Open Sans" !important;
+}
+
+.text{  Nome de classe text
+	font-family: tahoma !important; Quando é colocado o important isso significa que independente do nível de especificação de codificação anterior, essa linha é a prioridade.
+}
+*/

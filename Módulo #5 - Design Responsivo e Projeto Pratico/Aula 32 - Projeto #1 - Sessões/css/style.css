@@ -1,0 +1,159 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans"
+}
+
+html,body{
+	height: 100%;
+}
+
+@font-face{
+	src:url('../fonts/OpenSans-Light.ttf');
+	font-family: "Open Sans";
+}
+
+.center{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.header{
+	width: 100%;
+	height: 60px;
+	background-color: #212343;
+}
+
+.header img{
+	margin: 15px;
+}
+
+.container-banner{
+	width: 100%;
+	height: 557px;
+	background-image:url('../images/header_bg.png');
+	background-size: cover;
+	background-position: center;
+}
+
+.container-banner > .center{
+	height: 100%;
+	/*text-align: right;*/
+}
+
+.form{
+	padding:10px;
+	width: 400px;
+	height: calc(100% + 30px);
+	float: right;
+	position: relative;
+	top:-15px;
+	border-width: 12px;
+	border-color: rgba(120,120,120,0.5);
+	border-style: solid;
+	background-color: white;
+	background-clip:padding-box; /* Colocando transparencia na borda */
+	/*background-origin tem o mesmo conceito de transparência porém serve para imagens.*/
+}
+
+.form h2{
+	font-weight: normal;
+	color: #999999;
+	font-size: 21px;
+}
+
+.input-container{
+	margin-top:20px;
+}
+
+.input-container span{
+	display: inline-block;
+	width: 100%;
+	color: #BBBBBB;
+	font-size: 17px;
+}
+
+.form p{
+	display: inline-block;
+	width: 100%;
+	color: #BBBBBB;
+	font-size: 17px;
+	margin:20px 0;
+}
+
+.input-container input[type=text]{
+	margin-top:8px;
+	width: 344px;
+	height: 55px;
+	border:1px solid #ccc;
+}
+
+.form .input-submit-container{
+	text-align: center;
+}
+
+.form input[type=submit]{
+	color: white;
+	font-size: 25px;
+	width: 280px;
+	height: 56px;
+	display: inline-block;
+	background-color: #363A6D;
+	border-top:0;
+	border-right: 0;
+	border-left: 0;
+	cursor: pointer;
+	border-bottom: 5px solid #4A5097;
+}
+
+.form input[type=submit]:hover{
+	background-color: #323665;
+}
+
+.container-list{ /* Essa é a tela da esquerda transparente da webpage */
+	padding:30px; /* Espaçamento */
+	margin-top:40px; /* Aumentando a margem */
+	float: left; /* ficará na esquerda */
+	width: 619px;
+	height: 270px;
+	background-color: rgba(33,35,67,0.7); /* o "a" do rgb é pela transparência */
+}
+
+.container-list ul{
+	list-style-position: inside; /* Colocando a lista pra dentro */
+}
+
+.container-list ul li{
+	margin-top:18px;
+	color: white;
+}
+
+
+.container-2{
+	padding:40px 0;
+	background-color: #ddd;
+	text-align: center;
+}
+
+.container-2 h2{
+	font-weight: normal;
+}
+
+.container-2 p{
+	width: 698px;
+	margin:15px 0;
+	display: inline-block;
+	text-align: justify; /* Alinhamento justificado */
+}
+
+.arrow{ /* Puxando a imagem de uma seta entre a sessão e o texto abaixo da webpage */
+	position: relative;
+	top:60px;
+	left:50%; /* a imagem iria para o centro da webpage */
+	margin-left: -20px; /* ficando parte dentro da sessão e outra parte no texto da webpage */
+	width: 40px;
+	height: 40px;
+	background-image: url('../images/arrow.png');
+	background-size: 100% 100%; /* 100% de largura e 100% de altura */
+}

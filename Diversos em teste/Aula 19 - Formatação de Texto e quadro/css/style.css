@@ -1,0 +1,39 @@
+*{ /*Sinal de multiplicação significa que está sendo pego todos os elementos existentes no nosso documento*/
+margin: 0; /*Espaçamento*/
+padding: 0; /*Espaçamento*/
+}
+
+/*
+ Estilo para o conteudo do nosso site
+*/
+
+html,body {
+	height: 100%;
+
+}
+
+.pai{
+	width: 1280px;
+	padding: 20px 0;
+	margin: 0 auto; /*Para centralizar as figuras*/
+	background: blue;
+
+}
+
+.child{
+	/*display: inline-block;
+	margin-right: -4px; /*Para corrigir o posicionamento*/
+	/* Trabalhando com textos abaixo */
+	font-size: 40px;
+	text-align: center;
+	padding: 50px 0;
+	color: white;
+	/* Fim do trabalho com textos */
+
+	box-sizing: border-box;
+	width: 640px;
+	height: 300px;
+	background: red;
+	float: left; /*É a mesma coisa que o display inline-block, porém não tem espaçamento e não é necessário corrigir posicionamento*/
+	border:	1px solid black;
+}

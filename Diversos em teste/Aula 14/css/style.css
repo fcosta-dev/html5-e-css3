@@ -1,0 +1,71 @@
+*{ /*Sinal de multiplicação significa que está sendo pego todos os elementos existentes no nosso documento*/
+margin: 0; /*Espaçamento*/
+padding: 0; /*Espaçamento*/
+}
+
+/*
+ Estilo para o conteudo do nosso site
+*/
+
+html,body {
+	height: 100%;
+
+}
+
+.lista, .lista2{
+	list-style-position: inside;
+	list-style-type: disc;
+	margin-left: 20px;
+}
+
+.lista li, .lista2 li{
+	font-size: 20px;
+	color: #4b4b4b;
+	margin-top: 10px;
+}
+
+.lista .item3, .lista2 .item3{
+	font-weight: bold;
+
+}
+
+/*
+.lista li.item3{
+	color: orange Todas as classes que contem item3 terá a cor laranja
+}
+*/
+
+/* <ol> Por padrão vem por números
+<ul> Por padrão vem pontos */
+
+ol{ 
+	list-style-position: inside;
+}
+
+ol > li{
+	color: red;
+}
+
+.um{
+	width: 500px;
+	height: 500px;
+	background: red;
+}
+
+.um > .dois{ /*Pegar a Div dois diretamente ligada a Classe Um*/
+	width: 300px;
+	height: 300px;
+	background: green;
+}
+
+.um > .três{ /*Pegar a Div três diretamente ligada a Classe Um*/
+	width: 100px;
+	height: 100px;
+	background: blue;
+}
+
+.um > .três > .quatro{ /*Pegar a Div quatro diretamente ligada a Div três que está diretamente ligada a Classe Um*/
+	width: 50px;
+	height: 50px;
+	background: gray;
+}
